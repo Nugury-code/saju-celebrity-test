@@ -1,6 +1,6 @@
 """Check the month pillar against KASI's official 24-term table (1920-2100, KST).
 1) sxtwl jie times vs KASI (1920-2017); 2) every person's month branch vs the KASI term calendar.
-KASI table: data/official/kasi_24terms_1920-2100.txt (optional; downloaded by the user from astro.kasi.re.kr, 2026-10-12)."""
+KASI table: data/official/kasi_24terms_1920-2100.txt (optional; download from astro.kasi.re.kr)."""
 import re, sys
 from datetime import datetime, date, timedelta
 import pandas as pd, sxtwl

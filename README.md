@@ -44,3 +44,6 @@ python3 analysis/test_weighted.py data/people_main.csv data/fame_raw.csv data/lo
 
 ## 폴더
 `index.html`(논문 웹 페이지), `paper/`(논문), `analysis/`(코드), `data/`(집계 결과)
+
+## 라이선스
+코드(`analysis/`)는 MIT 라이선스입니다(`LICENSE`). 논문(`paper/`, `index.html`)의 저작권은 작성자에게 있습니다.
