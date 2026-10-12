@@ -13,8 +13,11 @@
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17191c;--fg:#e6e7e9;--mute:#9aa0a8;--rule:#33373c;--accent:#8fb8d6;--head:#202327;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#17191c;--fg:#e6e7e9;--mute:#9aa0a8;--rule:#33373c;--accent:#8fb8d6;--head:#202327;color-scheme:dark}
 body{background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:16px;line-height:1.85;margin:0;padding:0;word-break:keep-all;overflow-wrap:break-word}
+.dl{text-align:right;font-family:var(--sans);font-size:.8rem;line-height:1}
+.dl a{display:inline-block;padding:7px 11px;border:1px solid var(--rule);border-radius:6px;color:var(--mute);text-decoration:none}
+.dl a:hover,.dl a:focus-visible{color:var(--accent);border-color:var(--accent);outline:none}
 main{max-width:720px;margin-inline:auto;padding-inline:16px;padding-block:24px 56px}
-.cover{text-align:center;padding-block:44px 32px;border-bottom:1px solid var(--rule);margin-bottom:24px}
+.cover{text-align:center;padding-block:24px 32px;border-bottom:1px solid var(--rule);margin-bottom:24px}
 .cover h1{font-size:clamp(1.5rem,5vw,1.9rem);line-height:1.4;margin:0 0 12px;text-wrap:balance}
 .cover h2{font-size:1.05rem;font-weight:400;color:var(--mute);margin:0 0 20px;border:0;padding:0}
 .cover p{margin:4px 0;font-family:var(--sans);font-size:.9rem;color:var(--mute)}
@@ -31,6 +34,7 @@ a{color:var(--accent)}
 </head>
 <body>
 <main>
+<div class="dl"><a href="paper/paper.pdf" download>PDF 받기</a></div>
 <section id="사주-조건은-연예인의-직업과-성취와-관련이-있는가" class="cover">
 <h1>사주 조건은 연예인의 직업과 성취와 관련이 있는가</h1>
 <h2 id="한국-연예인-11829명의-출생일로-본-달력-기대-분포와의-비교">한국 연예인 11,829명의 출생일로 본 달력 기대 분포와의 비교</h2>
