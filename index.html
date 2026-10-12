@@ -4,24 +4,25 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>사주 조건과 연예인 직업 논문</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@400;500&display=swap">
+<meta name="description" content="한국 연예인 11,829명의 출생일로 사주 조건을 달력 기대 분포와 비교한 논문">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
 <style>
-/* single-column paper, serif body, hairline tables */
+/* single-column paper, serif body */
 :root{--bg:#fbfbf9;--fg:#1d1f22;--mute:#5b6068;--rule:#d9dad6;--accent:#2f5d7c;--head:#f0f0ec;
 --serif:"Noto Serif KR",Georgia,serif;--sans:"Noto Sans KR",system-ui,sans-serif}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17191c;--fg:#e6e7e9;--mute:#9aa0a8;--rule:#33373c;--accent:#8fb8d6;--head:#202327;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#17191c;--fg:#e6e7e9;--mute:#9aa0a8;--rule:#33373c;--accent:#8fb8d6;--head:#202327;color-scheme:dark}
-body{background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:16px;line-height:1.85;padding-inline:16px;padding-block:32px}
-main{max-width:720px;margin-inline:auto}
-.cover{text-align:center;padding-block:48px 40px;border-bottom:1px solid var(--rule);margin-bottom:32px}
-.cover h1{font-size:1.9rem;line-height:1.4;margin:0 0 12px;text-wrap:balance}
-.cover h2{font-size:1.05rem;font-weight:400;color:var(--mute);margin:0 0 28px;border:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:16px;line-height:1.85;margin:0;padding:0;word-break:keep-all;overflow-wrap:break-word}
+main{max-width:720px;margin-inline:auto;padding-inline:16px;padding-block:24px 56px}
+.cover{text-align:center;padding-block:44px 32px;border-bottom:1px solid var(--rule);margin-bottom:24px}
+.cover h1{font-size:clamp(1.5rem,5vw,1.9rem);line-height:1.4;margin:0 0 12px;text-wrap:balance}
+.cover h2{font-size:1.05rem;font-weight:400;color:var(--mute);margin:0 0 20px;border:0;padding:0}
 .cover p{margin:4px 0;font-family:var(--sans);font-size:.9rem;color:var(--mute)}
+.cover br{display:none}
 h2{font-size:1.35rem;margin:2.2em 0 .6em;padding-bottom:.3em;border-bottom:1px solid var(--rule);text-wrap:balance}
 h3{font-size:1.1rem;margin:1.8em 0 .4em;color:var(--accent)}
-p,li{overflow-wrap:anywhere}
 .tw{overflow-x:auto;margin:1em 0}
-table{border-collapse:collapse;font-family:var(--sans);font-size:.85rem;line-height:1.5;min-width:100%}
+table{border-collapse:collapse;font-family:var(--sans);font-size:.85rem;line-height:1.5;min-width:100%;word-break:normal}
 th,td{border-bottom:1px solid var(--rule);padding:6px 10px;text-align:left;vertical-align:top;font-variant-numeric:tabular-nums}
 th{background:var(--head);white-space:nowrap}
 code{font-size:.9em}
@@ -102,7 +103,6 @@ a{color:var(--accent)}
 </tr>
 </tbody>
 </table></div>
-<p style="text-align:center;font-family:var(--sans);font-size:.9rem"><a href="paper/paper.pdf">논문 PDF 내려받기</a></p>
 <h3 id="분석-1-달력-기대-분포와의-비교">2.4 분석 1: 달력 기대 분포와의 비교</h3>
 <p>기준 분포는 “태어난 해의 모든 달력 날짜(절기 날 제외)에서 그 조건이 성립하는 날의 비율”이다. 사람마다 이 비율을 기대값으로 두고 집단에서 합산해 관측과 비교했다. 영가설은 생일이 그 해의 아무 날이나 같은 확률이라는 것이다. 조건 비율은 정규근사 z 검정(양측)으로, 일주 분포는 카이제곱(자유도 59)과 같은 영가설의 모의 20,000회(시드 20261008)로 검정했다. 월별 출생 쏠림을 반영하는 민감도 분석으로, 통계청 KOSIS의 전국 월별 출생아수(1981년부터, 그 이전 출생 연도는 1981~1990년 평균 월 비중)로 달력 날짜에 가중한 기대값도 계산했다. 검정은 12개이며 보정 기준은 α=0.05/12≈0.0042이다.</p>
 <ol type="1">
@@ -232,7 +232,7 @@ a{color:var(--accent)}
 <p>12개 검정 모두 보정 기준(0.0042)을 통과하지 못했다. 가장 작은 p는 C의 0.033이다. 조건 비율의 관측과 기대 차이는 11,829명 전체 대상 검정에서 모두 1%p 미만이고, 직업 하위 집단에서는 P1·P3이 0.9%p였다. 1,301명 소집단인 유명도 상위군에서만 C 비율이 기대보다 1.5%p 낮았으며(단독 비교 p=0.073), 나머지와의 초과분 비교(P4)는 통과하지 못했다.</p>
 <h3 id="분석-2">3.2 분석 2</h3>
 <p><strong>표 2. 배우 계열(N=7,479) 안에서 사주 조건 보유와 유명도</strong></p>
-<table style="width:100%;">
+<div class="tw"><table style="width:100%;">
 <colgroup>
 <col style="width: 14%" />
 <col style="width: 14%" />
@@ -291,7 +291,7 @@ a{color:var(--accent)}
 <td>0.0167</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>네 조건 모두 기준을 통과하지 못했다. 유명도 상위 10%에 드는 비율은 상관 보유자 11.4%, 비보유자 11.3%였다.</p>
 <h3 id="점검">3.3 점검</h3>
 <ul>
