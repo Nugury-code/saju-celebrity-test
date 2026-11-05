@@ -87,7 +87,7 @@ var JOBS = {
   singer: { name: "가수",         conds: ["siksang", "pyeonin", "dohwa"] },
   comedy: { name: "코미디언·사회자", conds: ["siksang"] }
 };
-var PAPER_URL = "https://github.com/Nugury-code/saju-celebrity-test";
+var PAPER_URL = "https://nugury-code.github.io/saju-celebrity-test/";
 
 function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
 function mask(ids) { return ids.reduce(function (m, id) { return m | CONDS[id].bit; }, 0); }

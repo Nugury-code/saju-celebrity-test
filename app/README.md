@@ -3,7 +3,7 @@
 원하는 직업(배우, 가수, 코미디언·사회자)에 어울린다고 하는 사주 조건이 일반인에게 얼마나 흔한지, 내 생년월일은 해당되는지 보여 주는 앱입니다.
 
 - 논문: 원석연 (2026). 사주 조건은 연예인의 직업과 성취와 관련이 있는가: 한국 연예인 11,829명의 출생일로 본 달력 기대 분포와의 비교
-- 논문 저장소: https://github.com/Nugury-code/saju-celebrity-test
+- 논문 페이지: https://nugury-code.github.io/saju-celebrity-test/
 
 ## 실행 방법
 
